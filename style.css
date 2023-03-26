@@ -1,0 +1,62 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+background-color:#000000;
+color:aliceblue;
+margin: 0;
+}
+#partearriba{
+    padding: 0px;
+    margin-top: 0px;
+    background-color:black;
+    
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+#menu{
+    font-size: 40px;
+    margin-left: 10px;
+    float:left
+}
+#logo{
+    font-size:50px ;
+    position: fixed;
+    top:-5px;
+    left: 800px;  
+}
+#buscar{
+    text-align: right; 
+    font-size: 40px;
+    margin-right: 10px;
+    position: sticky;
+}
+#modelo{
+    margin-left: 0px;
+    position:sticky;
+    display:block;
+    float: left;
+}
+#deportista{
+    margin-right: 0px;
+    position:sticky;     
+}
+#Contacto{
+    position: sticky;
+    margin-top: -23px;
+    float: left;
+    margin-left: 100px;
+}
+#Informacion{
+    float: right;
+    margin-top: -18px;
+    margin-right: 100px;
+    position: sticky;   
+}
+
+
+
+
+
