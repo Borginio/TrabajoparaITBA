@@ -18,20 +18,13 @@ a{
 }
 #menu{
     font-size: 40px;
-    margin-left: 10px;
-    float:left
 }
 #logo{
     font-size:50px ;
-    position: fixed;
-    top:-5px;
-    left: 800px;  
 }
-#buscar{
-    text-align: right; 
+#buscar{ 
     font-size: 40px;
-    margin-right: 10px;
-    position: sticky;
+    
 }
 #modelo{
     margin-left: 0px;
@@ -43,20 +36,27 @@ a{
     margin-right: 0px;
     position:sticky;     
 }
-#Contacto{
-    position: sticky;
-    margin-top: -23px;
-    float: left;
-    margin-left: 100px;
+
+#navbar{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
 }
-#Informacion{
-    float: right;
-    margin-top: -18px;
-    margin-right: 100px;
-    position: sticky;   
+.imagenes{
+    position: relative;
 }
+.Textofashion{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 18%;
 
-
-
+}
+.pepa{
+    margin-top: 30px;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+}
 
 
