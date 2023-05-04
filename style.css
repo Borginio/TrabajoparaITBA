@@ -4,60 +4,63 @@ html{
 body{
 background-color:#000000;
 color:aliceblue;
-margin: 0;
-}
-#head{
-    padding: 0px;
-    margin-top: 0px;
-    background-color:black;
-    
 }
 a{
     color:white;
     text-decoration: none;
 }
 #menu{
-    font-size: 40px;
+    font-size: 50px;
 }
 #logo{
-    font-size:50px ;
+    font-size:70px ;
 }
 #buscar{ 
     font-size: 40px;
     
 }
-#modelo{
-    margin-left: 0px;
-    position:sticky;
-    display:block;
-    float: left;
-}
-#deportista{
-    margin-right: 0px;
-    position:sticky;     
-}
-
 #navbar{
     display: flex;
     justify-content: space-between ;
     align-items: center;
 }
-.imagenes{
-    position: relative;
-}
-.Textofashion{
-    position: absolute;
-    margin-top: 25%;
-    margin-left: 18%;
-    font-size: 350%;
 
+.ambasimagenes{
+    display: flex;
+}
+.imagenfashion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textofashion{
+    align-items: center;
+    position: absolute;
+    font-size: 200%;
+}
+.imagendeporte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textodeporte{
+    align-items: center;
+    position: absolute;
+    font-size: 200%;
+}
+#video{
+    margin-top: -4px;
 }
 .pepa{
     margin-top: 30px;
+    font-size: 150%;
 }
 #footer{
     display: flex;
     justify-content: space-around;
+}
+.tamaño{
+    font-size: 250%;
 }
 
 
