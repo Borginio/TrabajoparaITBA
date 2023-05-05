@@ -1,28 +1,30 @@
-html{
+#documento{
     font-family: 'Roboto', sans-serif;
 }
-body{
+#cuerpo{
 background-color:#000000;
 color:aliceblue;
 }
-a{
+.a{
     color:white;
     text-decoration: none;
 }
 #menu{
-    font-size: 50px;
+    font-size: 5em;
+    
 }
 #logo{
-    font-size:70px ;
+    font-size:5em ;
 }
 #buscar{ 
-    font-size: 40px;
+    font-size:1em ;
     
 }
 #navbar{
     display: flex;
     justify-content: space-between ;
     align-items: center;
+    
 }
 
 .ambasimagenes{
@@ -36,7 +38,9 @@ a{
 .textofashion{
     align-items: center;
     position: absolute;
-    font-size: 200%;
+    color:white;
+    text-decoration: none;
+    
 }
 .imagendeporte{
     display: flex;
@@ -46,7 +50,8 @@ a{
 .textodeporte{
     align-items: center;
     position: absolute;
-    font-size: 200%;
+    color:white;
+    text-decoration: none;
 }
 #video{
     margin-top: -4px;
