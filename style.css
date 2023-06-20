@@ -98,13 +98,13 @@ color:aliceblue;
 
 @media only screen and (max-width: 992px) {
     #menu{
-        font-size: 5em;
+        font-size: 1em;
     }
     #logo{
-        font-size: 5em;
+        font-size: 2em;
     }
     #buscar{ 
-        font-size:1em;
+        font-size:0.3em;
     }
     #fila1{
         flex-direction: column;
