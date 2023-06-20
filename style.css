@@ -33,6 +33,10 @@ color:aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.3s ease;
+}
+.imagenfashion:hover {
+    opacity: 0.7;
 }
 .textofashion{
     align-items: center;
@@ -45,6 +49,10 @@ color:aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.3s ease;
+}
+.imagendeporte:hover {
+    opacity: 0.7;
 }
 .textodeporte{
     align-items: center;
