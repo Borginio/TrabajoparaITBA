@@ -100,7 +100,42 @@ color:aliceblue;
 .p{
     font-size: 2em;
 }
-
+.preguntas{
+    margin-top:50px;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+#frequent{
+    margin-top: 50px;
+    font-size: 70px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 15px;  
+}
+#about{
+    margin-top:100px ;
+    margin-bottom: 200px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.parrafo{
+    margin-top: 40px;
+}
+#holis{
+    font-size: 70px;
+}
+#locaciones{
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#locaciones img {
+    max-width: 50%; 
+    max-height: 50%;
+}
 @media only screen and (max-width: 992px) {
     #menu{
         font-size: 1em;
@@ -120,9 +155,9 @@ color:aliceblue;
     #fila3{
         flex-direction: column;
     }
-    .mobile{
-        width: 50%;
-
+    #locaciones img {
+        max-width: 100%; 
+        max-height: 100%;
     }
 }
 
