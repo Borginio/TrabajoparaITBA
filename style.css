@@ -13,6 +13,12 @@ color:aliceblue;
     font-size: 4em;
     
 }
+#izquierda{
+    background-color: black;
+  width: 170px;
+  
+}
+
 #logo{
     font-size:5em ;
 }
@@ -136,9 +142,16 @@ color:aliceblue;
     max-width: 50%; 
     max-height: 50%;
 }
+.boton{
+    border: 2px;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+}
 @media only screen and (max-width: 992px) {
-    #menu{
-        font-size: 1em;
+    #izquierda{
+        background-color: black;
+        width: 60px; 
     }
     #logo{
         font-size: 2em;
