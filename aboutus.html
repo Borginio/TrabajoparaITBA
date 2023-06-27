@@ -17,9 +17,39 @@
 <body id="cuerpo">
     <header> 
         <div id="navbar">
-            <div id="izquierda"></div>              
+            <div id="menu">
+                <button id="menuBtn">Menú choices</button>
+                <ul id="menuItems">
+                  <li><a href="streetwear.html">Streetwear</a></li>
+                  <li><a href="sportswear.html">Sportswear</a></li>
+                </ul>
+            </div>              
             <div id="logo"><a class="a" href="index.html"> Novmeno</a></div>
-            <div id="buscar"><input type="text" placeholder="Search"></div>
+            <button id="buscar" onclick="mostrarFormulario()">Registration</button>
+        </div>
+        <div class="popup" id="popupFormulario">
+            <form>
+                  <input type="text" name="nombre" placeholder="Nombre">
+                  <input type="text" name="apellido" placeholder="Apellido">
+                  <input type="email" name="email" id="email" placeholder="Email">
+                  <div id="error" style="display: none; color: red;">Correo electrónico inválido</div>
+                  <input type="date" name="fechaNacimiento" id="fechaNacimiento" placeholder="Fecha de nacimiento">
+                  <select name="genero" id="genero">
+                    <option value="">Selecciona tu género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <select name="pais" id="pais">
+                    <option value="">Selecciona tu país</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                  </select>
+                  <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            </form>
+            <button onclick="cerrarFormulario()">Cerrar</button> 
+            <button onclick="enviarFormulario()" type="submit">Enviar</button>
         </div>
     </header>
     <div id="about">

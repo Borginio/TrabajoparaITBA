@@ -1,3 +1,76 @@
+function mostrarFormulario() {
+    let popup = document.getElementById("popupFormulario");
+    popup.style.display = "block";
+}
+  
+function cerrarFormulario() {
+    let popup = document.getElementById("popupFormulario");
+    popup.style.display = "none";
+}
+  
+function validarFormulario() {
+    let nombreInput = document.getElementsByName("nombre")[0];
+    let apellidoInput = document.getElementsByName("apellido")[0];
+    let emailInput = document.getElementById("email");
+    let fechaNacimientoInput = document.getElementById("fechaNacimiento");
+    let generoInput = document.getElementById("genero");
+    let paisInput = document.getElementById("pais");
+    let nombre = nombreInput.value.trim();
+    let apellido = apellidoInput.value.trim();
+    let email = emailInput.value.trim();
+    let fechaNacimiento = fechaNacimientoInput.value;
+    let genero = generoInput.value;
+    let pais = paisInput.value;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (nombre === "" || apellido === "") {
+      alert("Por favor, ingresa tu nombre y apellido.");
+      return false;
+    }
+    if (!emailRegex.test(email)) {
+      alert("Por favor, ingresa un correo electrónico válido.");
+      return false;
+    }
+    if (fechaNacimiento === "") {
+      alert("Por favor, ingresa tu fecha de nacimiento.");
+      return false;
+    }
+    if (genero === "") {
+      alert("Por favor, selecciona tu género.");
+      return false;
+    }
+    if (pais === "") {
+      alert("Por favor, selecciona tu país.");
+      return false;
+    }
+  
+    return true;
+}
+  
+function enviarFormulario() {
+    if (validarFormulario()) {
+      console.log("Formulario enviado correctamente");
+      cerrarFormulario();
+    }
+}
+  
+  
+let map;
 
+async function initMap() {
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
 
-    
+  map = new Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+
+// funcionmenu
+var menuBtn = document.getElementById("menuBtn");
+var menuItems = document.getElementById("menuItems");
+
+menuBtn.addEventListener("click", function() {
+  
+  menuItems.classList.toggle("active");
+});

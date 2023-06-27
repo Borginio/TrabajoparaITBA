@@ -9,22 +9,29 @@ color:aliceblue;
     color:white;
     text-decoration: none;
 }
-#izquierda{
-    background-color: black;
-  width: 170px;
-}
 
 #logo{
     font-size:5em ;
 }
-#buscar{ 
-    font-size:1em ;
-}
+#buscar {
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: black;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease; 
+  }
+  
+  #buscar:hover {
+    background-color: #333333; 
+  }
 #navbar{
     display: flex;
     justify-content: space-around ;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .ambasimagenes{
@@ -43,8 +50,7 @@ color:aliceblue;
     align-items: center;
     position: absolute;
     color:white;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 .imagendeporte{
     display: flex;
@@ -143,16 +149,102 @@ color:aliceblue;
     color: black;
     background-color: white;
 }
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 9999;
+}
+  
+.popup form input[type="text"],
+.popup form input[type="email"],
+.popup form input[type="date"],
+.popup form select,
+.popup form textarea {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100%);
+}
+  
+  
+.popup button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+  
+.popup button:hover {
+    background-color: #ddd;
+}
+.popup form input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert();
+}
+#menuItems {
+    display: none;
+    background-color: black;
+    padding: 0;
+    list-style: none;
+    padding-left: 10px;
+}
+  
+#menuItems.active {
+    display: block;
+}
+  
+#menuItems li {
+    padding: 10px;
+}
+  
+#menuItems li a {
+    color: white;
+    text-decoration: none;
+}
+  
+#menuItems li a:hover {
+    text-decoration: underline;
+}
+#menuBtn {
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: black;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease; 
+  }
+  
+  #menuBtn:hover, #buscar:hover {
+    background-color: #333333; 
+  }
+
 @media only screen and (max-width: 992px) {
-    #izquierda{
-        background-color: black;
-        width: 60px; 
-    }
+    #menuBtn {
+        font-size: 1em;
+        padding: 8px; 
+      }
     #logo{
         font-size: 2em;
     }
     #buscar{ 
-        font-size:0.3em;
+        font-size:1em;
     }
     #fila1{
         flex-direction: column;
@@ -164,9 +256,10 @@ color:aliceblue;
         flex-direction: column;
     }
     #locaciones img {
-        max-width: 100%; 
-        max-height: 100%;
+        max-width: 80%; 
+        max-height: 80%;
     }
 }
+  
 
 

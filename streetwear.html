@@ -17,69 +17,81 @@
 <body id="cuerpo">
     <header> 
         <div id="navbar">
-            <div id="izquierda"></div>              
+            <div id="menu">
+                <button id="menuBtn">Menú choices</button>
+                <ul id="menuItems">
+                  <li><a href="streetwear.html">Streetwear</a></li>
+                  <li><a href="sportswear.html">Sportswear</a></li>
+                </ul>
+            </div>              
             <div id="logo"><a class="a" href="index.html"> Novmeno</a></div>
-            <div id="buscar"><input type="text" placeholder="Search"></div>
+            <button id="buscar" onclick="mostrarFormulario()">Registration</button>
         </div>
+        <div class="popup" id="popupFormulario">
+            <form>
+                  <input type="text" name="nombre" placeholder="Nombre">
+                  <input type="text" name="apellido" placeholder="Apellido">
+                  <input type="email" name="email" id="email" placeholder="Email">
+                  <div id="error" style="display: none; color: red;">Correo electrónico inválido</div>
+                  <input type="date" name="fechaNacimiento" id="fechaNacimiento" placeholder="Fecha de nacimiento">
+                  <select name="genero" id="genero">
+                    <option value="">Selecciona tu género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <select name="pais" id="pais">
+                    <option value="">Selecciona tu país</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                  </select>
+                  <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            </form>
+            <button onclick="cerrarFormulario()">Cerrar</button> 
+            <button onclick="enviarFormulario()" type="submit">Enviar</button>
+         </div>
     </header>
      <div id="fila1">
         <div class="publicacion">
             <img src="pexels-damian-barczak-8381350.jpg" height=100% width=100% alt="Calzado" >
             <p class="p"> Nike Pegasus 7</p>  
-            <p class="p">$100</p>
-            <button class="boton">Add to chart</button>     
         </div>
         <div class="publicacion">
             <img src="pexels-arthur-ogleznev-1102776.jpg" height=100% width=100% alt="Calzado">
             <p class="p">Adidas Yeezy</p>
-            <p class="p">$125</p>
-            <button class="boton">Add to chart</button>       
         </div>
         <div class="publicacion">
             <img src="pexels-athena-1777467.jpg" height=100% width=100% alt="Calzado">
             <p class="p">Converse All Star</p> 
-            <p class="p">$120</p>
-            <button class="boton">Add to chart</button>      
         </div>
      </div>
      <div id="fila2">
         <div class="publicacion">
             <img src="pexels-cottonbro-studio-6320077.jpg" height=100% width=100% alt="Calzado">
             <p class="p">Asos Boots</p>
-            <p class="p">$110</p>
-            <button class="boton">Add to chart</button>       
         </div>
         <div class="publicacion">
             <img src="pexels-euwan-marbaniang-12210270.jpg" height=100% width=100% alt="Calzado">
             <p class="p">Oxford number one</p> 
-            <p class="p">$110</p>
-            <button class="boton">Add to chart</button>      
         </div>
         <div class="publicacion">
             <img src="pexels-sergey-zhumaev-3208298.jpg" height=100% width=100% alt="Calzado">
             <p class="p">Scandinavian trackers</p>  
-            <p class="p">$100</p>
-            <button class="boton">Add to chart</button>     
         </div>
      </div>
      <div id="fila3">
         <div class="publicacion">
             <img src="pexels-luis-quintero-11220643.jpg" height=100% width=100% alt="Calzado">
             <p class="p">Adidas Stan Smith</p> 
-            <p class="p">$90</p>
-            <button class="boton">Add to chart</button>      
         </div>
         <div class="publicacion">
             <img src="pexels-kaique-rocha-593163.jpg" height=100% width=100% alt="Calzado">
             <p class="p">Vans Old School</p> 
-            <p class="p">$210</p>
-            <button class="boton">Add to chart</button>      
         </div>
         <div class="publicacion">
             <img src="pexels-mart-production-7230896.jpg" height=100% width=100% alt="Calzado">
             <p class="p">Olises Gaea</p>
-            <p class="p">$180</p>
-            <button class="boton">Add to chart</button>       
         </div>
      </div>
   <div id="footer">

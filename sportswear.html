@@ -17,69 +17,80 @@
 <body id="cuerpo">
     <header> 
         <div id="navbar">
-            <div id="izquierda"></div>              
+            <div id="menu">
+                <button id="menuBtn">Menú choices</button>
+                <ul id="menuItems">
+                  <li><a href="streetwear.html">Streetwear</a></li>
+                  <li><a href="sportswear.html">Sportswear</a></li>
+                </ul>
+            </div>              
             <div id="logo"><a class="a" href="index.html"> Novmeno</a></div>
-            <div id="buscar"><input type="text" placeholder="Search"></div>
+            <button id="buscar" onclick="mostrarFormulario()">Registration</button>
+        </div>
+        <div class="popup" id="popupFormulario">
+            <form>
+                  <input type="text" name="nombre" placeholder="Nombre">
+                  <input type="text" name="apellido" placeholder="Apellido">
+                  <input type="email" name="email" id="email" placeholder="Email">
+                  <div id="error" style="display: none; color: red;">Correo electrónico inválido</div>
+                  <input type="date" name="fechaNacimiento" id="fechaNacimiento" placeholder="Fecha de nacimiento">
+                  <select name="genero" id="genero">
+                    <option value="">Selecciona tu género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <select name="pais" id="pais">
+                    <option value="">Selecciona tu país</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                  </select>
+                  <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            </form>
+            <button onclick="cerrarFormulario()">Cerrar</button> 
+            <button onclick="enviarFormulario()" type="submit">Enviar</button>
         </div>
     </header>
   <div id="fila1">
     <div class="publicacion">
         <img src="pexels-wesley-davi-15336560.jpg" height=100% width=100% alt="Calzado" >
         <p class="p"> Nike Air Jordan</p> 
-        <p class="p">$500</p>  
-        <button class="boton">Add to chart</button>    
     </div>
     <div class="publicacion">
         <img src="pexels-toro-tseleng-9869141.jpg" height=100% width=100% alt="Calzado">
         <p class="p">Nike Element</p> 
-        <p class="p">$300</p> 
-        <button class="boton">Add to chart</button>     
     </div>
     <div class="publicacion">
         <img src="pexels-sinitta-leunen-5496580 (1).jpg" height=100% width=100% alt="Calzado">
         <p class="p">New Balance Prisma</p>
-        <p class="p">$80</p> 
-        <button class="boton">Add to chart</button>      
-    </div>
   </div>
   <div id="fila2">
     <div class="publicacion">
         <img src="pexels-oliver-sjöström-1103830.jpg" height=100% width=100% alt="Calzado">
-        <p class="p">Puma Borg</p>  
-        <p class="p">$110</p>
-        <button class="boton">Add to chart</button>     
+        <p class="p">Puma Borg</p>
     </div>
     <div class="publicacion">
         <img src="pexels-lok-lok-1143503.jpg" height=100% width=100% alt="Calzado">
         <p class="p">Anta Curry</p> 
-        <p class="p">$150</p>
-        <button class="boton">Add to chart</button>      
     </div>
     <div class="publicacion">
         <img src="pexels-jhonny-salas-brochero-9634895.jpg" height=100% width=100% alt="Calzado">
         <p class="p">Nike Victory</p> 
-        <p class="p">$200</p>
-        <button class="boton">Add to chart</button>      
     </div>
   </div>
   <div id="fila3">
     <div class="publicacion">
         <img src="pexels-erik-mclean-16094248.jpg" height=100% width=100% alt="Calzado">
         <p class="p">Nike Air Max</p>
-        <p class="p">$300</p>
-        <button class="boton">Add to chart</button>       
     </div>
     <div class="publicacion">
         <img src="pexels-erik-mclean-7710997.jpg" height=100% width=100% alt="Calzado">
         <p class="p">Anta Red Fury</p>
-        <p class="p">$70</p>
-        <button class="boton">Add to chart</button>       
     </div>
     <div class="publicacion">
         <img src="pexels-bella-zhong-1522381.jpg" height=100% width=100% alt="Calzado">
         <p class="p">Converse Competition</p>
-        <p class="p">$190</p>
-        <button class="boton">Add to chart</button>       
     </div>
   </div>
   <div id="footer">
