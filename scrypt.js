@@ -57,7 +57,6 @@ function enviarFormulario() {
 let map;
 
 async function initMap() {
-  //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
 
   map = new Map(document.getElementById("map"), {
