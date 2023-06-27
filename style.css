@@ -9,7 +9,6 @@ color:aliceblue;
     color:white;
     text-decoration: none;
 }
-
 #logo{
     font-size:5em ;
 }
@@ -25,13 +24,13 @@ color:aliceblue;
     transition: background-color 0.3s ease; 
   }
   
-  #buscar:hover {
+#buscar:hover {
     background-color: #333333; 
   }
 #navbar{
     display: flex;
     justify-content: space-around ;
-    align-items: center; 
+    align-items: center;   
 }
 
 .ambasimagenes{
@@ -201,6 +200,8 @@ color:aliceblue;
     padding: 0;
     list-style: none;
     padding-left: 10px;
+    position: absolute;
+    z-index: 9999;
 }
   
 #menuItems.active {
@@ -214,10 +215,11 @@ color:aliceblue;
 #menuItems li a {
     color: white;
     text-decoration: none;
+    
 }
   
 #menuItems li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 #menuBtn {
     font-size: 2em;
@@ -233,6 +235,19 @@ color:aliceblue;
   
   #menuBtn:hover, #buscar:hover {
     background-color: #333333; 
+  }
+  .boton-menu {
+    display: block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .boton-menu:hover {
+    background-color: #333333;
   }
 
 @media only screen and (max-width: 992px) {
