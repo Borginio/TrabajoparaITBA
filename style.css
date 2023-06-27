@@ -249,6 +249,10 @@ color:aliceblue;
   .boton-menu:hover {
     background-color: #333333;
   }
+#comentario{
+    margin-top: 40px;
+    margin-left: 10px;
+}
 
 @media only screen and (max-width: 992px) {
     #menuBtn {
