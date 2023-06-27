@@ -44,18 +44,14 @@ function validarFormulario() {
     }
   
     return true;
-}
-  
+} 
 function enviarFormulario() {
     if (validarFormulario()) {
       console.log("Formulario enviado correctamente");
       cerrarFormulario();
     }
-}
-  
-  
+}  
 let map;
-
 async function initMap() {
   const { Map } = await google.maps.importLibrary("maps");
 
@@ -66,10 +62,27 @@ async function initMap() {
 }
 
 // funcionmenu
-var menuBtn = document.getElementById("menuBtn");
-var menuItems = document.getElementById("menuItems");
+let menuBtn = document.getElementById("menuBtn");
+let menuItems = document.getElementById("menuItems");
 
 menuBtn.addEventListener("click", function() {
   
   menuItems.classList.toggle("active");
 });
+
+// funcioncontador
+let nextUpdateDate = new Date('2023-07-04');
+function updateCountdown() {
+  let countdownElement = document.getElementById('days');
+  let currentDate = new Date();
+
+  let timeRemaining = nextUpdateDate - currentDate;
+
+  let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+
+  countdownElement.textContent = days;
+
+  setTimeout(updateCountdown, 1000);
+}
+updateCountdown();
+

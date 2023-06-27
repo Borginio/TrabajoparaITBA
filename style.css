@@ -231,12 +231,12 @@ color:aliceblue;
     cursor: pointer; 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
     transition: background-color 0.3s ease; 
-  }
+}
   
-  #menuBtn:hover, #buscar:hover {
+#menuBtn:hover, #buscar:hover {
     background-color: #333333; 
   }
-  .boton-menu {
+.boton-menu {
     display: block;
     padding: 10px 20px;
     background-color: black;
@@ -244,16 +244,35 @@ color:aliceblue;
     border-radius: 5px;
     margin-right: 10px;
     cursor: pointer;
-  }
+}
   
-  .boton-menu:hover {
+.boton-menu:hover {
     background-color: #333333;
-  }
+}
 #comentario{
     margin-top: 40px;
     margin-left: 10px;
 }
-
+.countdown {
+    text-align: center;
+    margin: 200px;
+}
+  
+#codito {
+    font-size: 40px;
+    margin: 10px 0;
+}
+  
+#days {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+  
+  
 @media only screen and (max-width: 992px) {
     #menuBtn {
         font-size: 1em;
